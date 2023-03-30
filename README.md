@@ -45,7 +45,8 @@ To get started with VedicSutras, follow these steps:
 
 4. Open http://localhost:3000 in your browser to view the app.
 
-##Contributing
+## Contributing
+
 Contributions are welcome! If you'd like to contribute to VedicSutras, please follow these steps:
 
 1. Fork the repository
@@ -53,6 +54,6 @@ Contributions are welcome! If you'd like to contribute to VedicSutras, please fo
 3. Commit your changes and push the branch
 4. Open a pull request and provide a detailed description of your changes
 
-##License
+## License
 
 This project is licensed under the MIT License.
