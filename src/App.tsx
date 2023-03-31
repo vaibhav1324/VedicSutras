@@ -1,8 +1,17 @@
+import { BrowserRouter } from 'react-router-dom';
+
+import { queryClient } from './utils';
+import { QueryClientProvider } from 'react-query';
+
+import Routes from 'routes';
+
 function App() {
   return (
-    <div className="App">
-      <h1 className="h1">Vedic Sutras</h1>
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <BrowserRouter>
+        <Routes />
+      </BrowserRouter>
+    </QueryClientProvider>
   );
 }
 
