@@ -1,15 +1,31 @@
 import React, { FC } from 'react';
 
-import bg from 'assets/bg.jpg';
+import { Switch } from 'react-router-dom';
 
-const style = { backgroundImage: `url(${bg})` };
+import { NotFound } from 'components/modules';
+import { RouteWithSubRoutes } from 'components/core';
+
+import Landing from './landing';
+
+const routeConfig = Object.freeze({
+  LANDING: {
+    component: Landing,
+    path: '/',
+  },
+  NOT_FOUND: {
+    component: NotFound,
+    path: '/*',
+  },
+});
 
 const AuthRotues: FC = () => {
   return (
-    <div className="center" style={style}>
-      <div className="navbar bg-base-100 absolute top-0">
-        <a className="btn btn-ghost text-4xl">Vedic Sutras</a>
-      </div>
+    <div className="flex-col">
+      <Switch>
+        {Object.entries(routeConfig).map(([key, val]) => (
+          <RouteWithSubRoutes key={key} {...val} exact />
+        ))}
+      </Switch>
     </div>
   );
 };
