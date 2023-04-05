@@ -21,5 +21,5 @@ export const classes = {
   subHeading2: clsx('mt-2 text-3xl font-bold text-gray-900 sm:text-4xl'),
   paragraph: clsx('mt-3 text-lg text-gray-500'),
   getStarted: clsx('btn btn-primary'),
-  learnMore: clsx('btn btn-secondary mt-3 sm:mt-0 sm:ml-3'),
+  learnMore: clsx('btn btn-secondary btn-outline mt-3 sm:mt-0 sm:ml-3'),
 };

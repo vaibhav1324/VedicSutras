@@ -17,7 +17,7 @@ export const AnimatedSvg = memo(() => {
     pathIndex.current = getRandomIndex();
 
     animate(progress, pathIndex.current, {
-      duration: 1.2,
+      duration: 1.5,
       ease: 'easeInOut',
       onComplete: () => {
         animatePath();
