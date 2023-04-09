@@ -6,7 +6,7 @@ import { LandingViewProps } from './Landing.props';
 
 import { AnimatedSvg } from 'components/core/AnimatedSvg';
 
-const LandingView: FC<LandingViewProps> = () => {
+const LandingView: FC<LandingViewProps> = ({ onLoginPress }) => {
   return (
     <div className={classes.container}>
       <div className={classes.left}>
@@ -39,7 +39,7 @@ const LandingView: FC<LandingViewProps> = () => {
               help you lead a balanced and fulfilling life.
             </p>
             <div className="mt-8 sm:flex">
-              <a href="/" className={classes.getStarted}>
+              <a href="/" className={classes.getStarted} onClick={onLoginPress}>
                 Get Started
               </a>
               <a href="/" className={classes.learnMore}>

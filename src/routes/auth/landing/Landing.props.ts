@@ -4,4 +4,6 @@ type Params = {};
 
 export type LandingProps = RouteComponentProps<Params>;
 
-export type LandingViewProps = {};
+export type LandingViewProps = {
+  onLoginPress: () => void;
+};

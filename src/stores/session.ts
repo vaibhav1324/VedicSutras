@@ -52,7 +52,12 @@ const actions = {
   },
 };
 
-export const session = {
+/**
+ * Session store
+ *
+ * $ sign is used to indicate that this is a store
+ */
+export const $session = {
   actions,
   selectors,
 };
